@@ -9,7 +9,7 @@ function App() {
   const [state, setState] = useState({ rotation: 160, sketch: box.sketch });
 
   return (
-    <>
+    <div>
       <ReactP5Wrapper sketch={state.sketch} rotation={state.rotation} />
       <input
         type="range"
@@ -35,7 +35,7 @@ function App() {
       >
         Change Sketch
       </button>
-    </>
+    </div>
   );
 }
 
